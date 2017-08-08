@@ -12,6 +12,13 @@
 		0B2C9A251F3621AD00F7CC85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C9A231F3621AD00F7CC85 /* Main.storyboard */; };
 		0B2C9A271F3621AD00F7CC85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C9A261F3621AD00F7CC85 /* Assets.xcassets */; };
 		0B2C9A2A1F3621AD00F7CC85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C9A281F3621AD00F7CC85 /* LaunchScreen.storyboard */; };
+		0B2C9A321F36244D00F7CC85 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C9A311F36244D00F7CC85 /* pokemon.csv */; };
+		0B2C9A341F370D5F00F7CC85 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C9A331F370D5F00F7CC85 /* Pokemon.swift */; };
+		0B3F46DD1F38A45C003BF18E /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F46DC1F38A45C003BF18E /* PokemonDetailVC.swift */; };
+		0B7913D51F373CFE00F36BC8 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7913D41F373CFE00F36BC8 /* PokeCell.swift */; };
+		0B7913D71F37566F00F36BC8 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7913D61F37566F00F36BC8 /* csv.swift */; };
+		0B7913DA1F37634A00F36BC8 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B7913D81F37634A00F36BC8 /* pokemon.ttf */; };
+		0B7913DB1F37634A00F36BC8 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B7913D91F37634A00F36BC8 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		0B2C9A261F3621AD00F7CC85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B2C9A291F3621AD00F7CC85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B2C9A2B1F3621AD00F7CC85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2C9A311F36244D00F7CC85 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		0B2C9A331F370D5F00F7CC85 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		0B3F46DC1F38A45C003BF18E /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
+		0B7913D41F373CFE00F36BC8 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		0B7913D61F37566F00F36BC8 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		0B7913D81F37634A00F36BC8 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		0B7913D91F37634A00F36BC8 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,61 @@
 		0B2C9A1E1F3621AD00F7CC85 /* pokemon */ = {
 			isa = PBXGroup;
 			children = (
+				0B7913D21F373CBA00F36BC8 /* Model */,
+				0B7913D31F373CC000F36BC8 /* View */,
+				0B7913DC1F37634E00F36BC8 /* Controller */,
+				0B7913DE1F37636300F36BC8 /* Resources */,
+				0B7913DD1F37635C00F36BC8 /* Util */,
 				0B2C9A1F1F3621AD00F7CC85 /* AppDelegate.swift */,
-				0B2C9A211F3621AD00F7CC85 /* ViewController.swift */,
 				0B2C9A231F3621AD00F7CC85 /* Main.storyboard */,
 				0B2C9A261F3621AD00F7CC85 /* Assets.xcassets */,
 				0B2C9A281F3621AD00F7CC85 /* LaunchScreen.storyboard */,
 				0B2C9A2B1F3621AD00F7CC85 /* Info.plist */,
 			);
 			path = pokemon;
+			sourceTree = "<group>";
+		};
+		0B7913D21F373CBA00F36BC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B2C9A331F370D5F00F7CC85 /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0B7913D31F373CC000F36BC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B7913D41F373CFE00F36BC8 /* PokeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0B7913DC1F37634E00F36BC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B2C9A211F3621AD00F7CC85 /* ViewController.swift */,
+				0B3F46DC1F38A45C003BF18E /* PokemonDetailVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0B7913DD1F37635C00F36BC8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0B7913D61F37566F00F36BC8 /* csv.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		0B7913DE1F37636300F36BC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B2C9A311F36244D00F7CC85 /* pokemon.csv */,
+				0B7913D81F37634A00F36BC8 /* pokemon.ttf */,
+				0B7913D91F37634A00F36BC8 /* music.mp3 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +158,7 @@
 					0B2C9A1B1F3621AC00F7CC85 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 48XD59469V;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,8 +186,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7913DA1F37634A00F36BC8 /* pokemon.ttf in Resources */,
 				0B2C9A2A1F3621AD00F7CC85 /* LaunchScreen.storyboard in Resources */,
+				0B7913DB1F37634A00F36BC8 /* music.mp3 in Resources */,
 				0B2C9A271F3621AD00F7CC85 /* Assets.xcassets in Resources */,
+				0B2C9A321F36244D00F7CC85 /* pokemon.csv in Resources */,
 				0B2C9A251F3621AD00F7CC85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7913D51F373CFE00F36BC8 /* PokeCell.swift in Sources */,
 				0B2C9A221F3621AD00F7CC85 /* ViewController.swift in Sources */,
 				0B2C9A201F3621AD00F7CC85 /* AppDelegate.swift in Sources */,
+				0B3F46DD1F38A45C003BF18E /* PokemonDetailVC.swift in Sources */,
+				0B2C9A341F370D5F00F7CC85 /* Pokemon.swift in Sources */,
+				0B7913D71F37566F00F36BC8 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +371,7 @@
 				0B2C9A301F3621AD00F7CC85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
