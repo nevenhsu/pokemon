@@ -46,7 +46,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let csv = try CSV(contentsOfURL: path!)
             let rows = csv.rows
             for row in rows {
-                let dex = Double(row["id"]!)!
+                let dex = Int(row["id"]!)!
                 let name = row["identifier"]!
                 let pokemon = Pokemon(name: name, dex: dex)
                 pokemons.append(pokemon)
